@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Ventanas.AdminPrincipalController">
+   <children>
+      <ImageView fitHeight="83.0" fitWidth="238.0" layoutX="260.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="364.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="259.25999450683594" AnchorPane.topAnchor="53.0">
+         <image>
+            <Image url="@../../imagenes/Aperture.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="190.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="223.0" prefWidth="370.0" style="-fx-background-color: #353535;">
+         <children>
+            <Button fx:id="consultaMensual" layoutX="34.900001525878906" layoutY="18.899999618530273" mnemonicParsing="false" onAction="#apretarConsulta" prefHeight="50.0" prefWidth="293.0" style="-fx-background-color: #b71c1c; -fx-font-size: 20;" text="Consultar planillas mensuales" textFill="#f2f2f2" wrapText="true">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="adminUsuarios" layoutX="35.0" layoutY="90.0" mnemonicParsing="false" onAction="#apretarAdminUsuarios" prefHeight="50.0" prefWidth="293.0" style="-fx-background-color: #b71c1c; -fx-font-size: 20;" text="Administrar usuarios" textFill="#f2f2f2">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="cerrarSesion" layoutX="135.0" layoutY="166.0" mnemonicParsing="false" onAction="#apretarCerrarSesionA" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: #37474f;" text="Cerrar Sesion" textFill="#ebe9e9">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="41.0" layoutY="34.0" style="-fx-font-size: 15;" text="Modo Administrador" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="35.0">
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="0.05" hue="-0.43" saturation="0.12" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
